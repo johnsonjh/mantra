@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83065BE10B61E99300FC2E81 /* Map.c in Sources */ = {isa = PBXBuildFile; fileRef = 83065BDF0B61E99300FC2E81 /* Map.c */; };
+		83065C260B62F67C00FC2E81 /* Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 83065C240B62F67C00FC2E81 /* Utils.c */; };
+		83065F520B64034300FC2E81 /* Saric.c in Sources */ = {isa = PBXBuildFile; fileRef = 83065F500B64034300FC2E81 /* Saric.c */; };
+		8306618D0B66F50E00FC2E81 /* Enemies.c in Sources */ = {isa = PBXBuildFile; fileRef = 8306618B0B66F50E00FC2E81 /* Enemies.c */; };
+		831B81480D6CC2810016DB0B /* OpeningScreen.c in Sources */ = {isa = PBXBuildFile; fileRef = 831B81470D6CC2810016DB0B /* OpeningScreen.c */; };
+		831B82730D713FC00016DB0B /* Sound.c in Sources */ = {isa = PBXBuildFile; fileRef = 831B82720D713FC00016DB0B /* Sound.c */; };
+		832319A40C25C5700037244E /* Dialogs.c in Sources */ = {isa = PBXBuildFile; fileRef = 832319A20C25C5700037244E /* Dialogs.c */; };
+		8375CA6C10E2C2B3008EC749 /* liballeg-4.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8375CA6B10E2C2B3008EC749 /* liballeg-4.2.3.dylib */; };
+		8375CA6F10E2C31C008EC749 /* liballeg-4.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8375CA6B10E2C2B3008EC749 /* liballeg-4.2.3.dylib */; };
+		839AE9C70B5AC7A900A7EA1C /* GameConstants.c in Sources */ = {isa = PBXBuildFile; fileRef = 839AE9C50B5AC7A900A7EA1C /* GameConstants.c */; };
+		839AE9EB0B5AD4C000A7EA1C /* LoadData.c in Sources */ = {isa = PBXBuildFile; fileRef = 839AE9E90B5AD4C000A7EA1C /* LoadData.c */; };
+		839E76560D7EDE2A0091595F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 839E76550D7EDE2A0091595F /* main.c */; };
+		839E76630D7EDE780091595F /* libaldmb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E76610D7EDE780091595F /* libaldmb.a */; };
+		839E76640D7EDE790091595F /* libdumb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E76620D7EDE780091595F /* libdumb.a */; };
+		839E766A0D7EDE950091595F /* GameData.dat in Resources */ = {isa = PBXBuildFile; fileRef = 839E76650D7EDE950091595F /* GameData.dat */; };
+		839E766B0D7EDE950091595F /* Images.dat in Resources */ = {isa = PBXBuildFile; fileRef = 839E76660D7EDE950091595F /* Images.dat */; };
+		839E766C0D7EDE950091595F /* Music.dat in Resources */ = {isa = PBXBuildFile; fileRef = 839E76670D7EDE950091595F /* Music.dat */; };
+		839E766D0D7EDE950091595F /* Saved.dat in Resources */ = {isa = PBXBuildFile; fileRef = 839E76680D7EDE950091595F /* Saved.dat */; };
+		839E766E0D7EDE950091595F /* Sound.dat in Resources */ = {isa = PBXBuildFile; fileRef = 839E76690D7EDE950091595F /* Sound.dat */; };
+		839E76840D7EF3730091595F /* libalfont.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 839E76830D7EF3730091595F /* libalfont.a */; };
+		83CED0AD0B7D902900EB3D95 /* EnemyUpdate.c in Sources */ = {isa = PBXBuildFile; fileRef = 83CED0AB0B7D902900EB3D95 /* EnemyUpdate.c */; };
+		83EA8CEB0B7D96D300022CCD /* EnemyCollision.c in Sources */ = {isa = PBXBuildFile; fileRef = 83EA8CE90B7D96D300022CCD /* EnemyCollision.c */; };
+		83F0A0310B6058F0007986D3 /* Tests.c in Sources */ = {isa = PBXBuildFile; fileRef = 83F0A02F0B6058F0007986D3 /* Tests.c */; };
+		83F964130C1F44160082570F /* Input.c in Sources */ = {isa = PBXBuildFile; fileRef = 83F964110C1F44160082570F /* Input.c */; };
+		846C14CC0B1F65CE0012B69D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		846C14DA0B1F663C0012B69D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			comments = "Embed the Allegro framework";
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				8375CA6F10E2C31C008EC749 /* liballeg-4.2.3.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		83065BDE0B61E99300FC2E81 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		83065BDF0B61E99300FC2E81 /* Map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Map.c; sourceTree = "<group>"; };
+		83065C230B62F67C00FC2E81 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		83065C240B62F67C00FC2E81 /* Utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Utils.c; sourceTree = "<group>"; };
+		83065F4F0B64034300FC2E81 /* Saric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Saric.h; sourceTree = "<group>"; };
+		83065F500B64034300FC2E81 /* Saric.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Saric.c; sourceTree = "<group>"; };
+		8306618A0B66F50E00FC2E81 /* Enemies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemies.h; sourceTree = "<group>"; };
+		8306618B0B66F50E00FC2E81 /* Enemies.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Enemies.c; sourceTree = "<group>"; };
+		831B81460D6CC2810016DB0B /* OpeningScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpeningScreen.h; sourceTree = "<group>"; };
+		831B81470D6CC2810016DB0B /* OpeningScreen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OpeningScreen.c; sourceTree = "<group>"; };
+		831B82680D70957C0016DB0B /* aldumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aldumb.h; sourceTree = "<group>"; };
+		831B82690D70957C0016DB0B /* dumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dumb.h; sourceTree = "<group>"; };
+		831B82710D713FC00016DB0B /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sound.h; sourceTree = "<group>"; };
+		831B82720D713FC00016DB0B /* Sound.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Sound.c; sourceTree = "<group>"; };
+		832319A10C25C5700037244E /* Dialogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dialogs.h; sourceTree = "<group>"; };
+		832319A20C25C5700037244E /* Dialogs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Dialogs.c; sourceTree = "<group>"; };
+		8375CA6B10E2C2B3008EC749 /* liballeg-4.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "liballeg-4.2.3.dylib"; path = "libs/osx/liballeg-4.2.3.dylib"; sourceTree = "<group>"; };
+		839AE9C40B5AC7A900A7EA1C /* GameConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConstants.h; sourceTree = "<group>"; };
+		839AE9C50B5AC7A900A7EA1C /* GameConstants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GameConstants.c; sourceTree = "<group>"; };
+		839AE9C80B5AC80F00A7EA1C /* GameTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GameTypes.h; sourceTree = "<group>"; };
+		839AE9D00B5ACBB700A7EA1C /* GameDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDefines.h; sourceTree = "<group>"; };
+		839AE9E80B5AD4C000A7EA1C /* LoadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadData.h; sourceTree = "<group>"; };
+		839AE9E90B5AD4C000A7EA1C /* LoadData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LoadData.c; sourceTree = "<group>"; };
+		839E764E0D7EDCF40091595F /* alfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alfont.h; sourceTree = "<group>"; };
+		839E76550D7EDE2A0091595F /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		839E76610D7EDE780091595F /* libaldmb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaldmb.a; path = libs/osx/libaldmb.a; sourceTree = SOURCE_ROOT; };
+		839E76620D7EDE780091595F /* libdumb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdumb.a; path = libs/osx/libdumb.a; sourceTree = SOURCE_ROOT; };
+		839E76650D7EDE950091595F /* GameData.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = GameData.dat; path = dats/GameData.dat; sourceTree = SOURCE_ROOT; };
+		839E76660D7EDE950091595F /* Images.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = Images.dat; path = dats/Images.dat; sourceTree = SOURCE_ROOT; };
+		839E76670D7EDE950091595F /* Music.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = Music.dat; path = dats/Music.dat; sourceTree = SOURCE_ROOT; };
+		839E76680D7EDE950091595F /* Saved.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = Saved.dat; path = dats/Saved.dat; sourceTree = SOURCE_ROOT; };
+		839E76690D7EDE950091595F /* Sound.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = Sound.dat; path = dats/Sound.dat; sourceTree = SOURCE_ROOT; };
+		839E76710D7EDF080091595F /* alfontdll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = alfontdll.h; path = include/alfontdll.h; sourceTree = SOURCE_ROOT; };
+		839E76830D7EF3730091595F /* libalfont.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libalfont.a; path = libs/osx/libalfont.a; sourceTree = SOURCE_ROOT; };
+		83CED0AA0B7D902900EB3D95 /* EnemyUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyUpdate.h; sourceTree = "<group>"; };
+		83CED0AB0B7D902900EB3D95 /* EnemyUpdate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = EnemyUpdate.c; sourceTree = "<group>"; };
+		83EA8CE80B7D96D300022CCD /* EnemyCollision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyCollision.h; sourceTree = "<group>"; };
+		83EA8CE90B7D96D300022CCD /* EnemyCollision.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = EnemyCollision.c; sourceTree = "<group>"; };
+		83F0A02E0B6058F0007986D3 /* Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
+		83F0A02F0B6058F0007986D3 /* Tests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Tests.c; sourceTree = "<group>"; };
+		83F964100C1F44160082570F /* Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input.h; sourceTree = "<group>"; };
+		83F964110C1F44160082570F /* Input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Input.c; sourceTree = "<group>"; };
+		846C14D30B1F65CE0012B69D /* Mantra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mantra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		846C14CB0B1F65CE0012B69D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846C14CC0B1F65CE0012B69D /* Cocoa.framework in Frameworks */,
+				839E76630D7EDE780091595F /* libaldmb.a in Frameworks */,
+				839E76640D7EDE790091595F /* libdumb.a in Frameworks */,
+				839E76840D7EF3730091595F /* libalfont.a in Frameworks */,
+				8375CA6C10E2C2B3008EC749 /* liballeg-4.2.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				846C14D30B1F65CE0012B69D /* Mantra.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Mantra */ = {
+			isa = PBXGroup;
+			children = (
+				29B97315FDCFA39411CA2CEA /* Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Mantra;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				839AE9EC0B5AD4CD00A7EA1C /* include */,
+				839AE9ED0B5AD4EB00A7EA1C /* src */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				839E76650D7EDE950091595F /* GameData.dat */,
+				839E76660D7EDE950091595F /* Images.dat */,
+				839E76670D7EDE950091595F /* Music.dat */,
+				839E76680D7EDE950091595F /* Saved.dat */,
+				839E76690D7EDE950091595F /* Sound.dat */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8375CA6B10E2C2B3008EC749 /* liballeg-4.2.3.dylib */,
+				839E76830D7EF3730091595F /* libalfont.a */,
+				839E76610D7EDE780091595F /* libaldmb.a */,
+				839E76620D7EDE780091595F /* libdumb.a */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		839AE9EC0B5AD4CD00A7EA1C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				839E76710D7EDF080091595F /* alfontdll.h */,
+				831B82680D70957C0016DB0B /* aldumb.h */,
+				839E764E0D7EDCF40091595F /* alfont.h */,
+				831B82690D70957C0016DB0B /* dumb.h */,
+				839AE9D00B5ACBB700A7EA1C /* GameDefines.h */,
+				839AE9C80B5AC80F00A7EA1C /* GameTypes.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		839AE9ED0B5AD4EB00A7EA1C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				832319A10C25C5700037244E /* Dialogs.h */,
+				832319A20C25C5700037244E /* Dialogs.c */,
+				83F964100C1F44160082570F /* Input.h */,
+				83F964110C1F44160082570F /* Input.c */,
+				839AE9C40B5AC7A900A7EA1C /* GameConstants.h */,
+				839AE9C50B5AC7A900A7EA1C /* GameConstants.c */,
+				839AE9E80B5AD4C000A7EA1C /* LoadData.h */,
+				839AE9E90B5AD4C000A7EA1C /* LoadData.c */,
+				83F0A02E0B6058F0007986D3 /* Tests.h */,
+				83F0A02F0B6058F0007986D3 /* Tests.c */,
+				83065BDE0B61E99300FC2E81 /* Map.h */,
+				83065BDF0B61E99300FC2E81 /* Map.c */,
+				839E76550D7EDE2A0091595F /* main.c */,
+				83065C230B62F67C00FC2E81 /* Utils.h */,
+				83065C240B62F67C00FC2E81 /* Utils.c */,
+				83065F4F0B64034300FC2E81 /* Saric.h */,
+				83065F500B64034300FC2E81 /* Saric.c */,
+				8306618A0B66F50E00FC2E81 /* Enemies.h */,
+				8306618B0B66F50E00FC2E81 /* Enemies.c */,
+				83CED0AA0B7D902900EB3D95 /* EnemyUpdate.h */,
+				83CED0AB0B7D902900EB3D95 /* EnemyUpdate.c */,
+				83EA8CE80B7D96D300022CCD /* EnemyCollision.h */,
+				83EA8CE90B7D96D300022CCD /* EnemyCollision.c */,
+				831B81460D6CC2810016DB0B /* OpeningScreen.h */,
+				831B81470D6CC2810016DB0B /* OpeningScreen.c */,
+				831B82710D713FC00016DB0B /* Sound.h */,
+				831B82720D713FC00016DB0B /* Sound.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		846C14C70B1F65CE0012B69D /* Mantra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846C14CE0B1F65CE0012B69D /* Build configuration list for PBXNativeTarget "Mantra" */;
+			buildPhases = (
+				846C14C80B1F65CE0012B69D /* Resources */,
+				846C14C90B1F65CE0012B69D /* Sources */,
+				846C14CB0B1F65CE0012B69D /* Frameworks */,
+				846C14DA0B1F663C0012B69D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mantra;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Mantra;
+			productReference = 846C14D30B1F65CE0012B69D /* Mantra.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 846C14C10B1F65C30012B69D /* Build configuration list for PBXProject "Mantra" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Mantra */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				846C14C70B1F65CE0012B69D /* Mantra */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		846C14C80B1F65CE0012B69D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839E766A0D7EDE950091595F /* GameData.dat in Resources */,
+				839E766B0D7EDE950091595F /* Images.dat in Resources */,
+				839E766C0D7EDE950091595F /* Music.dat in Resources */,
+				839E766D0D7EDE950091595F /* Saved.dat in Resources */,
+				839E766E0D7EDE950091595F /* Sound.dat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		846C14C90B1F65CE0012B69D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				839AE9C70B5AC7A900A7EA1C /* GameConstants.c in Sources */,
+				839AE9EB0B5AD4C000A7EA1C /* LoadData.c in Sources */,
+				83F0A0310B6058F0007986D3 /* Tests.c in Sources */,
+				83065BE10B61E99300FC2E81 /* Map.c in Sources */,
+				83065C260B62F67C00FC2E81 /* Utils.c in Sources */,
+				83065F520B64034300FC2E81 /* Saric.c in Sources */,
+				8306618D0B66F50E00FC2E81 /* Enemies.c in Sources */,
+				83CED0AD0B7D902900EB3D95 /* EnemyUpdate.c in Sources */,
+				83EA8CEB0B7D96D300022CCD /* EnemyCollision.c in Sources */,
+				83F964130C1F44160082570F /* Input.c in Sources */,
+				832319A40C25C5700037244E /* Dialogs.c in Sources */,
+				831B81480D6CC2810016DB0B /* OpeningScreen.c in Sources */,
+				831B82730D713FC00016DB0B /* Sound.c in Sources */,
+				839E76560D7EDE2A0091595F /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		846C14C20B1F65C30012B69D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		846C14C30B1F65C30012B69D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Deployment;
+		};
+		846C14C40B1F65C30012B69D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Default;
+		};
+		846C14CF0B1F65CE0012B69D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "\"$(LOCAL_LIBRARY_DIR)/Frameworks/Allegro.framework/Versions/Current/Headers\"";
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/libs/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/libs/osx\"";
+				OTHER_LDFLAGS = (
+					"-L/usr/local/lib",
+					"-lalleg-main",
+					"-lalfont",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Mantra;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		846C14D00B1F65CE0012B69D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/frameworks\"";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					/usr/local/include,
+				);
+				HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(LOCAL_LIBRARY_DIR)/Frameworks/Allegro.framework/Versions/Current/Headers\"";
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(HOME)/Applications";
+				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/libs/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/libs/osx\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_LDFLAGS = (
+					"-L/usr/local/lib",
+					"-lalleg-main",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Mantra;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		846C14D10B1F65CE0012B69D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/frameworks\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "\"$(LOCAL_LIBRARY_DIR)/Frameworks/Allegro.framework/Versions/Current/Headers\"";
+				INFOPLIST_FILE = "Info-_PROJECTNAME___Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/libs/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/libs/osx\"";
+				OTHER_LDFLAGS = (
+					"-L/usr/local/lib",
+					"-lalleg-main",
+					"-lalfont",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Mantra;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		846C14C10B1F65C30012B69D /* Build configuration list for PBXProject "Mantra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846C14C20B1F65C30012B69D /* Development */,
+				846C14C30B1F65C30012B69D /* Deployment */,
+				846C14C40B1F65C30012B69D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		846C14CE0B1F65CE0012B69D /* Build configuration list for PBXNativeTarget "Mantra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846C14CF0B1F65CE0012B69D /* Development */,
+				846C14D00B1F65CE0012B69D /* Deployment */,
+				846C14D10B1F65CE0012B69D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
