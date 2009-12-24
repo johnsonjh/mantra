@@ -455,6 +455,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.0;
 				HEADER_SEARCH_PATHS = "\"$(LOCAL_LIBRARY_DIR)/Frameworks/Allegro.framework/Versions/Current/Headers\"";
 				INFOPLIST_FILE = "Info-_PROJECTNAME___Upgraded_.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -470,11 +471,7 @@
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/libs/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/libs/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/libs/osx\"";
-				OTHER_LDFLAGS = (
-					"-L/usr/local/lib",
-					"-lalleg-main",
-					"-lalfont",
-				);
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = Mantra;
 				SECTORDER_FLAGS = "";
