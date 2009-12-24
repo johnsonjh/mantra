@@ -15,8 +15,14 @@
 		831B82730D713FC00016DB0B /* Sound.c in Sources */ = {isa = PBXBuildFile; fileRef = 831B82720D713FC00016DB0B /* Sound.c */; };
 		832319A40C25C5700037244E /* Dialogs.c in Sources */ = {isa = PBXBuildFile; fileRef = 832319A20C25C5700037244E /* Dialogs.c */; };
 		83705C1D10E330BF003B471C /* liballeg-main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83705C1C10E330BF003B471C /* liballeg-main.a */; };
-		8375CA6C10E2C2B3008EC749 /* liballeg-4.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8375CA6B10E2C2B3008EC749 /* liballeg-4.2.3.dylib */; };
-		8375CA6F10E2C31C008EC749 /* liballeg-4.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8375CA6B10E2C2B3008EC749 /* liballeg-4.2.3.dylib */; };
+		83705C3A10E33E47003B471C /* liballeg_s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83705C3910E33E47003B471C /* liballeg_s.a */; };
+		83705DE310E341D0003B471C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83705DDC10E341D0003B471C /* AudioToolbox.framework */; };
+		83705DE410E341D0003B471C /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83705DDD10E341D0003B471C /* AudioUnit.framework */; };
+		83705DE510E341D0003B471C /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83705DDE10E341D0003B471C /* Carbon.framework */; };
+		83705DE610E341D0003B471C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83705DDF10E341D0003B471C /* CoreAudio.framework */; };
+		83705DE710E341D0003B471C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83705DE010E341D0003B471C /* IOKit.framework */; };
+		83705DE810E341D0003B471C /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83705DE110E341D0003B471C /* QuickTime.framework */; };
+		83705DE910E341D0003B471C /* System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83705DE210E341D0003B471C /* System.framework */; };
 		839AE9C70B5AC7A900A7EA1C /* GameConstants.c in Sources */ = {isa = PBXBuildFile; fileRef = 839AE9C50B5AC7A900A7EA1C /* GameConstants.c */; };
 		839AE9EB0B5AD4C000A7EA1C /* LoadData.c in Sources */ = {isa = PBXBuildFile; fileRef = 839AE9E90B5AD4C000A7EA1C /* LoadData.c */; };
 		839E76560D7EDE2A0091595F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 839E76550D7EDE2A0091595F /* main.c */; };
@@ -43,7 +49,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				8375CA6F10E2C31C008EC749 /* liballeg-4.2.3.dylib in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +73,14 @@
 		832319A10C25C5700037244E /* Dialogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dialogs.h; sourceTree = "<group>"; };
 		832319A20C25C5700037244E /* Dialogs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Dialogs.c; sourceTree = "<group>"; };
 		83705C1C10E330BF003B471C /* liballeg-main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballeg-main.a"; path = "libs/osx/liballeg-main.a"; sourceTree = "<group>"; };
-		8375CA6B10E2C2B3008EC749 /* liballeg-4.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "liballeg-4.2.3.dylib"; path = "libs/osx/liballeg-4.2.3.dylib"; sourceTree = "<group>"; };
+		83705C3910E33E47003B471C /* liballeg_s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liballeg_s.a; path = libs/osx/liballeg_s.a; sourceTree = "<group>"; };
+		83705DDC10E341D0003B471C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		83705DDD10E341D0003B471C /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
+		83705DDE10E341D0003B471C /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		83705DDF10E341D0003B471C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		83705DE010E341D0003B471C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		83705DE110E341D0003B471C /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		83705DE210E341D0003B471C /* System.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = System.framework; path = /System/Library/Frameworks/System.framework; sourceTree = "<absolute>"; };
 		839AE9C40B5AC7A900A7EA1C /* GameConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConstants.h; sourceTree = "<group>"; };
 		839AE9C50B5AC7A900A7EA1C /* GameConstants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GameConstants.c; sourceTree = "<group>"; };
 		839AE9C80B5AC80F00A7EA1C /* GameTypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GameTypes.h; sourceTree = "<group>"; };
@@ -106,8 +118,15 @@
 				839E76630D7EDE780091595F /* libaldmb.a in Frameworks */,
 				839E76640D7EDE790091595F /* libdumb.a in Frameworks */,
 				839E76840D7EF3730091595F /* libalfont.a in Frameworks */,
-				8375CA6C10E2C2B3008EC749 /* liballeg-4.2.3.dylib in Frameworks */,
 				83705C1D10E330BF003B471C /* liballeg-main.a in Frameworks */,
+				83705C3A10E33E47003B471C /* liballeg_s.a in Frameworks */,
+				83705DE310E341D0003B471C /* AudioToolbox.framework in Frameworks */,
+				83705DE410E341D0003B471C /* AudioUnit.framework in Frameworks */,
+				83705DE510E341D0003B471C /* Carbon.framework in Frameworks */,
+				83705DE610E341D0003B471C /* CoreAudio.framework in Frameworks */,
+				83705DE710E341D0003B471C /* IOKit.framework in Frameworks */,
+				83705DE810E341D0003B471C /* QuickTime.framework in Frameworks */,
+				83705DE910E341D0003B471C /* System.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +176,14 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8375CA6B10E2C2B3008EC749 /* liballeg-4.2.3.dylib */,
+				83705DDC10E341D0003B471C /* AudioToolbox.framework */,
+				83705DDD10E341D0003B471C /* AudioUnit.framework */,
+				83705DDE10E341D0003B471C /* Carbon.framework */,
+				83705DDF10E341D0003B471C /* CoreAudio.framework */,
+				83705DE010E341D0003B471C /* IOKit.framework */,
+				83705DE110E341D0003B471C /* QuickTime.framework */,
+				83705DE210E341D0003B471C /* System.framework */,
+				83705C3910E33E47003B471C /* liballeg_s.a */,
 				83705C1C10E330BF003B471C /* liballeg-main.a */,
 				839E76830D7EF3730091595F /* libalfont.a */,
 				839E76610D7EDE780091595F /* libaldmb.a */,
@@ -362,11 +388,13 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/libs/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/libs/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/libs/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/libs/osx\"";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = Mantra;
@@ -418,11 +446,13 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/libs/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/libs/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/libs/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/libs/osx\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
@@ -466,11 +496,13 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/libs/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/libs/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/libs/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/libs/osx\"";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = Mantra;
