@@ -2135,8 +2135,10 @@ int readAnimData(void)
 	short readSize;
 	Rect readRect;
 	Point readPoint;
-	int polygonPoints[8];
+	int polygonPoints[10];
 	int numpoints;
+	
+	int firstx, firsty;
 	
 	memset(g_SwordAnimData, 0, sizeof(g_SwordAnimData));
 	
@@ -2181,7 +2183,7 @@ int readAnimData(void)
 				BITSWAP(readRect.right)
 #endif
 				
-	    			i -= 6;
+				i -= 6;
 				
 			//	printf("ReadSize: %d\n", readSize);
 				
@@ -2206,9 +2208,18 @@ int readAnimData(void)
 					
 					polygonPoints[i * 2] = readPoint.h + 150;
 					polygonPoints[(i * 2) + 1] = readPoint.v + 150;
+					
+					if (i == 0)
+					{
+						firstx = polygonPoints[0];
+						firsty = polygonPoints[1];
+					}
 				}
 				
-				polygon(g_SwordAnimData[currentBitmap], numpoints, polygonPoints, makecol(r / 256, g / 256, b / 256));
+				polygonPoints[i * 2] = firstx;
+				polygonPoints[(i * 2) + 1] = firsty;
+				
+				polygon(g_SwordAnimData[currentBitmap], numpoints + 1, polygonPoints, makecol(r / 256, g / 256, b / 256));
 			}
 			else
 			{

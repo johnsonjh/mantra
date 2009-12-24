@@ -14,6 +14,7 @@
 		831B81480D6CC2810016DB0B /* OpeningScreen.c in Sources */ = {isa = PBXBuildFile; fileRef = 831B81470D6CC2810016DB0B /* OpeningScreen.c */; };
 		831B82730D713FC00016DB0B /* Sound.c in Sources */ = {isa = PBXBuildFile; fileRef = 831B82720D713FC00016DB0B /* Sound.c */; };
 		832319A40C25C5700037244E /* Dialogs.c in Sources */ = {isa = PBXBuildFile; fileRef = 832319A20C25C5700037244E /* Dialogs.c */; };
+		83705C1D10E330BF003B471C /* liballeg-main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83705C1C10E330BF003B471C /* liballeg-main.a */; };
 		8375CA6C10E2C2B3008EC749 /* liballeg-4.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8375CA6B10E2C2B3008EC749 /* liballeg-4.2.3.dylib */; };
 		8375CA6F10E2C31C008EC749 /* liballeg-4.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8375CA6B10E2C2B3008EC749 /* liballeg-4.2.3.dylib */; };
 		839AE9C70B5AC7A900A7EA1C /* GameConstants.c in Sources */ = {isa = PBXBuildFile; fileRef = 839AE9C50B5AC7A900A7EA1C /* GameConstants.c */; };
@@ -66,6 +67,7 @@
 		831B82720D713FC00016DB0B /* Sound.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Sound.c; sourceTree = "<group>"; };
 		832319A10C25C5700037244E /* Dialogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dialogs.h; sourceTree = "<group>"; };
 		832319A20C25C5700037244E /* Dialogs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Dialogs.c; sourceTree = "<group>"; };
+		83705C1C10E330BF003B471C /* liballeg-main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liballeg-main.a"; path = "libs/osx/liballeg-main.a"; sourceTree = "<group>"; };
 		8375CA6B10E2C2B3008EC749 /* liballeg-4.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "liballeg-4.2.3.dylib"; path = "libs/osx/liballeg-4.2.3.dylib"; sourceTree = "<group>"; };
 		839AE9C40B5AC7A900A7EA1C /* GameConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConstants.h; sourceTree = "<group>"; };
 		839AE9C50B5AC7A900A7EA1C /* GameConstants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GameConstants.c; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				839E76640D7EDE790091595F /* libdumb.a in Frameworks */,
 				839E76840D7EF3730091595F /* libalfont.a in Frameworks */,
 				8375CA6C10E2C2B3008EC749 /* liballeg-4.2.3.dylib in Frameworks */,
+				83705C1D10E330BF003B471C /* liballeg-main.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				8375CA6B10E2C2B3008EC749 /* liballeg-4.2.3.dylib */,
+				83705C1C10E330BF003B471C /* liballeg-main.a */,
 				839E76830D7EF3730091595F /* libalfont.a */,
 				839E76610D7EDE780091595F /* libaldmb.a */,
 				839E76620D7EDE780091595F /* libdumb.a */,
@@ -347,6 +351,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.0;
 				HEADER_SEARCH_PATHS = "\"$(LOCAL_LIBRARY_DIR)/Frameworks/Allegro.framework/Versions/Current/Headers\"";
 				INFOPLIST_FILE = "";
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -356,17 +361,16 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/libs/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/libs/osx\"";
-				OTHER_LDFLAGS = (
-					"-L/usr/local/lib",
-					"-lalleg-main",
-					"-lalfont",
-				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/libs/osx\"";
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = Mantra;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -413,10 +417,12 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/libs/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/libs/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/libs/osx\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				OTHER_LDFLAGS = (
 					"-L/usr/local/lib",
@@ -461,10 +467,12 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/libs/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/libs/osx\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/libs/osx\"";
 				OTHER_LDFLAGS = (
 					"-L/usr/local/lib",
 					"-lalleg-main",
