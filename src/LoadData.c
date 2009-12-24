@@ -2138,7 +2138,8 @@ int readAnimData(void)
 	int polygonPoints[10];
 	int numpoints;
 	
-	int firstx, firsty;
+	int firstx = 0;
+	int firsty = 0;
 	
 	memset(g_SwordAnimData, 0, sizeof(g_SwordAnimData));
 	
