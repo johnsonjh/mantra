@@ -1,4 +1,4 @@
-EXE_NAME = build/Mantra.exe
+EXE_NAME = build/Windows/Mantra.exe
 
 CC = gcc 
 CFLAGS = -mno-cygwin -O2 -Wall -Iinclude -Isrc -DALLEGRO_STATICLINK -DMANTRA_WINDOWS -c
@@ -33,5 +33,5 @@ all: $(EXE_NAME)
 
 $(EXE_NAME): $(OBJFILES)
 	$(CC) $(LDFLAGS) -o $(EXE_NAME) $(OBJFILES) $(OUR_LIBRARIES) $(INT_LIBRARIES)
-	@(cp dats/* build)
+	@(cp dats/* build/Windows)
 	@(echo "All done!  Enjoy Mantra!")
