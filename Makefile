@@ -1,7 +1,7 @@
 EXE_NAME = build/Mantra.exe
 
 CC = gcc 
-CFLAGS = -mno-cygwin -O2 -Wall -Iinclude -Isrc -DALLEGRO_STATICLINK -c
+CFLAGS = -mno-cygwin -O2 -Wall -Iinclude -Isrc -DALLEGRO_STATICLINK -DMANTRA_WINDOWS -c
 
 INT_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lcomdlg32 -lole32 -ldinput -lddraw -ldxguid -lwinmm -ldsound -lmoldname -lmsvcrt
 OUR_LIBRARIES = ./libs/windows/libaldmb.a ./libs/windows/libdumb.a ./libs/windows/libalfont.a ./libs/windows/liballeg_s.a
